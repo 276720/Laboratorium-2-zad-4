@@ -58,7 +58,12 @@ public class UnitConverterApp extends JFrame {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new UnitConverterApp();
+                try{
+                    UnitConverterApp test =  new UnitConverterApp();
+                    test.setVisible(true);
+                } catch (Exception e ){
+                    e.printStackTrace(System.err);
+                }
             }
         });
     }
