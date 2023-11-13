@@ -14,10 +14,14 @@ public class Convert{
             result = inputValue * 1000;
         } else if (selectedInputUnit.equals("g") && selectedOutputUnit.equals("kg")) {
             result = inputValue / 1000;
-        } else if (selectedInputUnit.equals("kg") && selectedOutputUnit.equals("lb")) {
-            result = inputValue * 2.20462;
-        } else if (selectedInputUnit.equals("lb") && selectedOutputUnit.equals("kg")) {
-            result = inputValue / 2.20462;
+        } else if (selectedInputUnit.equals("kg") && selectedOutputUnit.equals("t")) {
+            result = inputValue /1000;
+        } else if (selectedInputUnit.equals("t") && selectedOutputUnit.equals("kg")) {
+            result = inputValue * 1000;
+        }else if (selectedInputUnit.equals("g") && selectedOutputUnit.equals("t")) {
+            result = inputValue / 1000000;
+        }else if (selectedInputUnit.equals("t") && selectedOutputUnit.equals("g")) {
+            result = inputValue * 1000000;
         } else {
             result = inputValue;
         }

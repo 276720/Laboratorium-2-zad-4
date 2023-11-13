@@ -26,8 +26,8 @@ public class UnitConverterApp extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 
-        unitInput = new JComboBox<>(new String[]{"kg", "g", "lb"});
-        unitOutput = new JComboBox<>(new String[]{"kg", "g", "lb"});
+        unitInput = new JComboBox<>(new String[]{"kg", "g", "t"});
+        unitOutput = new JComboBox<>(new String[]{"kg", "g", "t"});
         valueInput = new JTextField(10);
         convertButton = new JButton("Przelicz");
         resultLabel = new JLabel();
